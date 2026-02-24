@@ -6,7 +6,7 @@
 * **Week 1:** Authentication & User Identity (Completed)
 * **Week 2:** Academic Data & Scheduling Engine (Completed)
 * **Week 3:** Matchmaking Algorithm & Groups (completed)
-* week 4:( set up and deploy)
+* week 4:( set up and deploy) (Completed) 
 
  Key Features of the StudySquad Project 
 * **User Authentication:** Secure registration and login using token-based authentication.
