@@ -25,12 +25,13 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
+    'drf_spectacular',
 
     # StudySquad Apps
     'users',
     'academics',
     'scheduling',
-    # 'groups', # We will uncomment this in Week 3
+     'groups', 
 ]
 
 MIDDLEWARE = [
@@ -109,7 +110,14 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny', # We lock down specific views in their own files
     ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 
 CORS_ALLOW_ALL_ORIGINS = True
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'StudySquad API',
+    'DESCRIPTION': 'Matchmaking API for student study groups. Capstone Project.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
